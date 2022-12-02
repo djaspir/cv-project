@@ -109,10 +109,9 @@ select {
 
 .cv-form {
   width: 816px;
-  height: 1104px;
   background-color: #fff;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border-radius: 10px;
+  padding-bottom: 0.3rem;
 }
 
 .cv-form-title {
@@ -129,23 +128,46 @@ select {
   border-radius: 5px;
 }
 
+.grid-3-container,
 .grid-2-container,
 .grid-1-container {
   padding: 0.5rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.grid-3-container {
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .grid-2-container {
-  display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1rem;
 }
 
 .grid-1-container {
-  display: grid;
   grid-template-columns: 1fr;
-  gap: 1rem;
 }
 
 .text-input {
   width: 100%;
+}
+
+.success {
+  background-color: #198754;
+  color: #fff;
+  border: 1px solid #198754;
+  margin-left: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.success:hover {
+  background-color: #f4f4f4;
+  border: 1px solid #198754;
+  color: #198754;
+}
+
+.success:active {
+  background-color: #e4e4e4;
 }
