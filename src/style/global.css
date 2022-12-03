@@ -101,17 +101,35 @@ select {
 
 .main {
   padding: 2em;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  gap: 2rem;
 }
 
 .footer {
   text-align: center;
 }
 
-.cv-form {
+.cv-page {
   width: 816px;
   background-color: #fff;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding-bottom: 0.3rem;
+}
+
+.cv-no-flex {
+  flex-shrink: 0;
+}
+
+.cv-height {
+  height: 1104px;
+}
+
+.cv-sticky {
+  position: sticky;
+  top: 4rem;
+  align-self: flex-start;
 }
 
 .cv-form-title {
@@ -170,4 +188,40 @@ select {
 
 .success:active {
   background-color: #e4e4e4;
+}
+
+.flex-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.education-container {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.horizontal-line {
+  border: 1px solid #000;
+  margin: 1rem 2rem;
+}
+
+.education-items {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.personal-preview {
+  background-color: var(--secondary);
+  padding: 1rem;
+}
+
+.personal-title {
+  font-size: 2rem;
+  margin: 1rem;
 }

@@ -5,7 +5,7 @@ import PersonalInfo from "./PersonalInfo";
 
 const CVForm = () => {
   return (
-    <div className="cv-form">
+    <div className="cv-page cv-no-flex cv-sticky">
       <h2 className="cv-form-title">CV Creator Form</h2>
       <Section name="Personal Information">
         <PersonalInfo />
