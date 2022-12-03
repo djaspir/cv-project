@@ -3,12 +3,15 @@ import Education from "./Education";
 import Experience from "./Experience";
 import PersonalInfo from "./PersonalInfo";
 
-const CVForm = () => {
+const CVForm = ({ cv, onChangePersonal }) => {
   return (
     <div className="cv-page cv-no-flex cv-sticky">
       <h2 className="cv-form-title">CV Creator Form</h2>
       <Section name="Personal Information">
-        <PersonalInfo />
+        <PersonalInfo
+          personalInfo={cv.personalInfo}
+          onChange={onChangePersonal}
+        />
       </Section>
       <Section name="Educational Background">
         <Education />
