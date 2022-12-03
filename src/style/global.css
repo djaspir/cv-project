@@ -197,7 +197,12 @@ select {
   gap: 3rem;
 }
 
-.education-container {
+.personal-title {
+  font-size: 2rem;
+  margin: 1rem;
+}
+
+.preview-container {
   display: grid;
   grid-template-columns: auto 1fr;
   justify-content: center;
@@ -205,15 +210,15 @@ select {
   padding: 2rem;
 }
 
-.horizontal-line {
-  border: 1px solid #000;
-  margin: 1rem 2rem;
-}
-
-.education-items {
+.preview-items {
   display: flex;
   justify-content: center;
   gap: 4rem;
+}
+
+.horizontal-line {
+  border: 0.5px solid #000;
+  margin: 1rem 2rem;
 }
 
 .personal-preview {
@@ -221,7 +226,10 @@ select {
   padding: 1rem;
 }
 
-.personal-title {
-  font-size: 2rem;
-  margin: 1rem;
+.work-container {
+  margin-left: 1.5rem;
+}
+
+.position-title {
+  margin-right: 1rem;
 }
