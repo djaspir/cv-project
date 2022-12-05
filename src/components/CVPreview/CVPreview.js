@@ -2,11 +2,11 @@ import EducationPreview from "./EducationPreview";
 import PersonalPreview from "./PesonalPreview";
 import WorkPreview from "./WorkPreview";
 
-const CVPreview = () => {
+const CVPreview = ({ cv }) => {
   return (
     <div className="cv-page cv-height cv-no-flex ">
-      <PersonalPreview />
-      <EducationPreview />
+      <PersonalPreview personalInfo={cv.personalInfo} />
+      <EducationPreview education={cv.education} />
       <WorkPreview />
     </div>
   );

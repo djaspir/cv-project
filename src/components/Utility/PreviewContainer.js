@@ -1,10 +1,8 @@
-const PreviewContainer = ({ title, children, className }) => {
+const PreviewContainer = ({ title, children }) => {
   return (
     <>
-      <div className="preview-container">
-        <h3>{title}</h3>
-        <div className={className}>{children}</div>
-      </div>
+      <h3 className="preview-title">{title}</h3>
+      {children}
       <div className="horizontal-line" />
     </>
   );

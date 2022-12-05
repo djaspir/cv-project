@@ -1,4 +1,4 @@
-const Input = ({ label, type, value, onChange, className, id }) => {
+const Input = ({ label, type, value, onChange, className, id, name }) => {
   return (
     <label htmlFor={id}>
       {label}
@@ -8,6 +8,7 @@ const Input = ({ label, type, value, onChange, className, id }) => {
         onChange={onChange}
         className={className}
         id={id}
+        name={name}
       />
     </label>
   );

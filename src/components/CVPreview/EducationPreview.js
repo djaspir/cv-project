@@ -1,12 +1,16 @@
 import PreviewContainer from "../Utility/PreviewContainer";
 
-const EducationPreview = () => {
+const EducationPreview = ({ education }) => {
+  const educationItems = education.map((educationItem) => (
+    <div className="preview-items">
+      <p>{educationItem.studyTitle}</p>
+      <p>{educationItem.dateOfStudy}</p>
+      <p>{educationItem.schoolName}</p>
+    </div>
+  ));
+
   return (
-    <PreviewContainer title="Education" className="preview-items">
-      <p>Title of Study</p>
-      <p>Date of Study</p>
-      <p>School Name</p>
-    </PreviewContainer>
+    <PreviewContainer title="Education">{educationItems}</PreviewContainer>
   );
 };
 

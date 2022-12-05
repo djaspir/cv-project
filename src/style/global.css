@@ -170,23 +170,42 @@ select {
   width: 100%;
 }
 
-.success {
-  background-color: #198754;
+.success,
+.warning {
   color: #fff;
-  border: 1px solid #198754;
-  margin-left: 0.5rem;
+  margin-top: 0.5rem;
   padding: 0.5rem 1rem;
   border-radius: 2rem;
   cursor: pointer;
 }
 
-.success:hover {
+.success {
+  background-color: #198754;
+  border: 1px solid #198754;
+}
+
+.warning {
+  background-color: #dc3545;
+  border: 1px solid #dc3545;
+}
+
+.success:hover,
+.warning:hover {
   background-color: #f4f4f4;
+}
+
+.success:hover {
   border: 1px solid #198754;
   color: #198754;
 }
 
-.success:active {
+.warning:hover {
+  border: 1px solid #dc3545;
+  color: #dc3545;
+}
+
+.success:active,
+.warning:active {
   background-color: #e4e4e4;
 }
 
@@ -202,18 +221,14 @@ select {
   margin: 1rem;
 }
 
-.preview-container {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem;
+.preview-title {
+  margin: 1rem 2rem;
 }
 
 .preview-items {
-  display: flex;
-  justify-content: center;
-  gap: 4rem;
+  margin: 0 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 33.3%);
 }
 
 .horizontal-line {

@@ -1,22 +1,61 @@
 import Button from "../Utility/Button";
 import Input from "../Utility/Input";
 
-const Experience = () => {
-  return (
-    <>
+const Experience = ({ experience, onChange, onAdd, onDelete }) => {
+  const experienceItems = experience.map((experienceItem) => (
+    <div key={experienceItem.id}>
       <div className="grid-2-container">
-        <Input label="Company Name" id="companyName" className="text-input" />
+        <Input
+          label="Company Name"
+          id="company-name"
+          value={experienceItem.companyName}
+          className="text-input"
+          name="companyName"
+          onChange={(e) => onChange(e, experienceItem.id)}
+        />
         <Input
           label="Position Title"
-          id="positionTitle"
+          id="position-title"
+          value={experienceItem.positionTitle}
           className="text-input"
+          name="positionTitle"
+          onChange={(e) => onChange(e, experienceItem.id)}
         />
       </div>
       <div className="grid-2-container">
-        <Input label="Main Task" id="mainTas" className="text-input" />
-        <Input label="Date of Work" id="dateOfWork" className="text-input" />
+        <Input
+          label="Main Task"
+          id="main-task"
+          value={experienceItem.mainTask}
+          className="text-input"
+          name="mainTask"
+          onChange={(e) => onChange(e, experienceItem.id)}
+        />
+        <Input
+          label="Date of Work"
+          id="date-of-work"
+          value={experienceItem.dateOfWork}
+          className="text-input"
+          name="dateOfWork"
+          onChange={(e) => onChange(e, experienceItem.id)}
+        />
       </div>
-      <Button className="success" text="Add Experience" />
+      <Button
+        className="warning"
+        text="Delete Experience"
+        onClick={() => onDelete(experienceItem.id)}
+      />
+    </div>
+  ));
+
+  return (
+    <>
+      {experienceItems}
+      <Button
+        className="success"
+        text="Add Experience"
+        onClick={() => onAdd()}
+      />
     </>
   );
 };
