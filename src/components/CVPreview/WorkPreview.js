@@ -1,19 +1,26 @@
 import PreviewContainer from "../Utility/PreviewContainer";
 
-const WorkPreview = () => {
+const WorkPreview = ({ experience }) => {
+  const experienceItems = experience.map((experienceItem) => (
+    <div className="work-container" key={experienceItem.id}>
+      <p>
+        <strong className="position-title">
+          {experienceItem.positionTitle}
+        </strong>
+        {`(${experienceItem.dateOfWork})`}
+      </p>
+      <p>
+        <i>{experienceItem.companyName}</i>
+      </p>
+      <ul>
+        <li>{experienceItem.mainTask}</li>
+      </ul>
+    </div>
+  ));
+
   return (
     <PreviewContainer title="Work Experience">
-      <div className="work-container">
-        <p>
-          <strong className="position-title">Position Title</strong>Date of Work
-        </p>
-        <p>
-          <i>Company Name</i>
-        </p>
-      </div>
-      <ul>
-        <li>Main Task</li>
-      </ul>
+      {experienceItems}
     </PreviewContainer>
   );
 };

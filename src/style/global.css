@@ -226,7 +226,7 @@ select {
 }
 
 .preview-items {
-  margin: 0 2rem;
+  margin: 1rem 3rem;
   display: grid;
   grid-template-columns: repeat(3, 33.3%);
 }
@@ -242,7 +242,7 @@ select {
 }
 
 .work-container {
-  margin-left: 1.5rem;
+  margin-left: 4rem;
 }
 
 .position-title {

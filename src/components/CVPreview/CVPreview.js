@@ -7,7 +7,7 @@ const CVPreview = ({ cv }) => {
     <div className="cv-page cv-height cv-no-flex ">
       <PersonalPreview personalInfo={cv.personalInfo} />
       <EducationPreview education={cv.education} />
-      <WorkPreview />
+      <WorkPreview experience={cv.experience} />
     </div>
   );
 };

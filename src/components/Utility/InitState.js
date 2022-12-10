@@ -12,17 +12,50 @@ const InitState = {
     {
       id: uuidv4(),
       schoolName: "St. Mary's Academy of Ligao",
+      studyTitle: "Elementary",
+      dateOfStudy: "2002 - 2009",
+    },
+    {
+      id: uuidv4(),
+      schoolName: "Ligao National Highschool",
       studyTitle: "High School",
-      dateOfStudy: "2011-2012",
+      dateOfStudy: "2009 - 2011",
+    },
+    {
+      id: uuidv4(),
+      schoolName: "St. Mary's Academy of Ligao",
+      studyTitle: "High School",
+      dateOfStudy: "2011 - 2012",
+    },
+    {
+      id: uuidv4(),
+      schoolName: "Adamson University Manila",
+      studyTitle: "B.S. Information Technology",
+      dateOfStudy: "2014 - 2019",
     },
   ],
   experience: [
     {
       id: uuidv4(),
-      companyName: "",
-      positionTitle: "",
-      mainTask: "",
-      dateOfWork: "",
+      companyName: "JXM Technology Solution Inc.",
+      positionTitle: "IT Intern - DB ADMIN",
+      mainTask: "Analyze data based on field tests of site engineers",
+      dateOfWork: "January - April 2019",
+    },
+    {
+      id: uuidv4(),
+      companyName: "JXM Technology Solution Inc.",
+      positionTitle: "SQA (Service Quality Agent)",
+      mainTask:
+        "Configure microprocessors that will be deployed for customer’s CPE tests",
+      dateOfWork: "April 2019 - March 2022",
+    },
+    {
+      id: uuidv4(),
+      companyName: "JXM Technology Solution Inc.",
+      positionTitle: "Junior Software Developer",
+      mainTask: "Develop and Implement new software programs",
+      dateOfWork: "April 2019 - March 2022",
     },
   ],
 };
